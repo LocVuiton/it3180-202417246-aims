@@ -4,7 +4,11 @@ Các thay đổi đáng chú ý của AIMS-mini được ghi lại trong file n�
 
 ## [Unreleased]
 
-## [1.0.0] - 2026-11-02
+## [1.0.1] - 2026-11-02
+
+### Fixed
+
+- Tìm DVD theo tiêu đề không còn phân biệt chữ hoa và chữ thường.
 
 ### Added
 
