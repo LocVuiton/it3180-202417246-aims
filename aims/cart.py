@@ -11,9 +11,8 @@ class Cart:
         if len(self.items) >= MAX_NUMBERS_ORDERED:
             print("The cart is almost full")
             return False
-
         self.items.append(dvd)
-        print(f"Đã thêm đĩa '{dvd.title}' vào giỏ hàng")
+        print("Đã thêm đĩa vào giỏ hàng")
         return True
 
     def remove_dvd(self, dvd):
@@ -21,17 +20,14 @@ class Cart:
             self.items.remove(dvd)
             print("The disc has been removed")
             return True
-
         print("The disc is not in the cart")
         return False
-
     def print_cart(self):
         if not self.items:
             print("The cart is empty")
             return
         for index, dvd in enumerate(self.items, start=1):
             print(f"{index}. {dvd}")
-
         print(f"Total cost: {self.total_cost():.2f} $")
 
     def sort_by_title(self):
