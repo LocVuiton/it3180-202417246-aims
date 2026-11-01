@@ -20,6 +20,14 @@ class SearchTest(unittest.TestCase):
             ["The Lion King"],
         )
 
+    def test_search_by_title_ignores_case(self):
+        result = search_by_title(self.items, "lion")
+
+        self.assertEqual(
+            [dvd.title for dvd in result],
+            ["The Lion King"],
+        )
+
     def test_search_by_category(self):
         result = search_by_category(self.items, "Animation")
 
