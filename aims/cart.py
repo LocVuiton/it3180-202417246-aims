@@ -26,9 +26,10 @@ class Cart:
         if not self.items:
             print("The cart is empty")
             return
-
         for index, dvd in enumerate(self.items, start=1):
             print(f"{index}. {dvd}")
         print(f"Total cost: {self.total_cost():.2f} $")
+    def total_cost_with_discount(self, percent):
+        return self.total_cost() * percent / 100
     def total_cost(self):
         return sum(item.cost for item in self.items)
