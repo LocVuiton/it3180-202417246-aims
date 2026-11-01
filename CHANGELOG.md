@@ -1,6 +1,9 @@
 ## [Unreleased]
 
 ## [1.1.0] - 2026-11-02
+### Fixed
+
+- Tìm DVD theo tiêu đề không còn phân biệt chữ hoa và chữ thường.
 
 ### Added
 
