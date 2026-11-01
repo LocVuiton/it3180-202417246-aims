@@ -3,6 +3,10 @@
 Các thay đổi đáng chú ý của AIMS-mini được ghi lại trong file này.
 
 ## [Unreleased]
+### Added
+
+- Sắp xếp giỏ hàng theo tiêu đề DVD.
+- Sắp xếp giỏ hàng theo giá DVD.
 
 ## [1.0.0] - 2026-11-02
 
