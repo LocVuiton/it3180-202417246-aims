@@ -29,16 +29,17 @@ class Cart:
         if not self.items:
             print("The cart is empty")
             return
-
         for index, dvd in enumerate(self.items, start=1):
             print(f"{index}. {dvd}")
 
         print(f"Total cost: {self.total_cost():.2f} $")
+
     def sort_by_title(self):
         self.items.sort(key=lambda dvd: dvd.title)
 
     def sort_by_cost(self):
         self.items.sort(key=lambda dvd: dvd.cost)
+
     def total_cost_with_discount(self, percent):
         if not 0 <= percent <= 100:
             raise ValueError("percent must be between 0 and 100")
